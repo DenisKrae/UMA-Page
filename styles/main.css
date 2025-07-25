@@ -98,6 +98,7 @@ body {
     background-color: #f28f7f;
 }
 .button--transparent {
+    backdrop-filter: blur(0.5rem);
     background-color: transparent;
     border: 0.125rem solid white;
 }
