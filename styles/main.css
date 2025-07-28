@@ -105,6 +105,9 @@ body {
 .button--transparent:hover {
     background-color: rgba(255, 255, 255, 0.25);
 }
+.text-primary {
+    color: #ed6a4e;
+}
 
 .header__logo {
     width: 100%;
@@ -232,6 +235,30 @@ body {
 .adventures__card {
     background-color: rgba(255, 255, 255);
     flex: 0 0 22.333333rem;
-    height: 25rem;  
+    height: 40rem;  
     margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    text-align: center;
+}
+.adventures__card-img {
+    display: block;
+    width: 100%;
+    
+}
+.adventures__card-heading {
+    margin: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(1, 65, 83);
+    text-transform: uppercase;
+    text-align: center;
+}
+.adventures__card-date {
+    color: rgb(1, 65, 83);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0 0 1.25rem 0;
 }
