@@ -57,7 +57,9 @@ Einfach `index.html` im Browser öffnen – kein Build nötig.
 
 **GitHub Pages Deployment (optional):**
 ```markdown
-👉 [Live ansehen](https://deniskrae.github.io/UMA-Page/)
+👉 [Live ansehen]
+https://deniskrae.github.io/UMA-Page/
+
 ```
 
 ---
