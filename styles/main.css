@@ -211,6 +211,9 @@ body {
     letter-spacing: 0.05rem;
     padding: 2rem 0;
 }
+.heading--white {
+    color: white;
+}
 .heading--centered {
     text-align: center;
 }
@@ -288,4 +291,10 @@ body {
     font-size: 1rem;
     padding-bottom: 1rem;
     margin: 0;
+}
+.story {
+    background-image: url("../images/story/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
