@@ -217,6 +217,14 @@ body {
 .heading--centered {
     text-align: center;
 }
+.header--top-box::before{
+    content: "";
+    display: block;
+    height: 0.125rem;
+    width: 7rem;
+    background-color: #ed6a4e;
+    margin-bottom: 3rem;
+}
 .heading__pre-text {
     display: block;
     font-size: 1.5rem;
@@ -297,4 +305,13 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+}
+.story__paragraph {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+    line-height: 1.4em;
 }
