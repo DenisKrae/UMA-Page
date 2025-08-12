@@ -76,6 +76,7 @@ body {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    color: #014153;
 }
 
 @media(min-width: 62em) {
@@ -358,25 +359,38 @@ body {
   justify-content: center;
   margin: auto;
 }
+.parts__icon-outer {
+    overflow: hidden;
+}
 .icon__container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: #ed6a4e 0.1rem solid;
-    margin-bottom: 2.5rem;
+    margin: -0.125rem;
+    
     
 }
 .icon__item {
+    color: inherit;
+    display: block;
     padding-top: 2rem;
-    border: 0.1rem solid #ed6a4e;
+    border: 0.125rem solid #ed6a4e;
     flex: 1 1 19rem;
     min-width: 18rem;
     text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.icon__item:hover {
+    background-color: #e9e7e7;
+    box-shadow: 0 0 20px rgba(237, 106, 78, 0.8);
+    border-color: #632bbe;
 }
 .icon__text {
     margin: 0;
     font-size: 1rem;
+    padding-top: 2.5rem;
     padding-bottom: 1.5rem;
     line-height: 1.4rem;
     max-width: 35rem;
