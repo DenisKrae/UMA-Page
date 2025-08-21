@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -384,9 +384,7 @@ body {
 }
 .icon__item:hover {
     background-color: #e9e7e7;
-    box-shadow: 0 0 20px rgba(237, 106, 78, 0.8);
-    border-color: #632bbe;
-}
+    box-shadow: 0 0 20px rgba(237, 106, 78, 0.8);}
 .icon__text {
     margin: 0;
     font-size: 1rem;
