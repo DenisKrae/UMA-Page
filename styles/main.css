@@ -76,7 +76,6 @@ body {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #014153;
 }
 
 @media(min-width: 62em) {
@@ -109,7 +108,14 @@ body {
 .text-primary {
     color: #ed6a4e;
 }
-
+.desktop-only{
+    display: none;
+}
+@media(min-width: 62em) {
+    .desktop-only{
+        display: initial;
+    }
+}
 .header__logo {
     width: 100%;
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
@@ -227,6 +233,24 @@ body {
     background-color: #ed6a4e;
     margin-bottom: 3rem;
 }
+.heading--bottom-box::after {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 7.5rem;
+    background-color: #ed6a4e;
+    margin-top: 0.25rem;
+    
+
+}
+.heading.skill--bottom-box{
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 7.5rem;
+    background-color: #ed6a4e;
+    padding: 0;
+}
 .heading__pre-text {
     display: block;
     font-size: 1.5rem;
@@ -262,11 +286,30 @@ body {
     
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
     transition: all 0.1s ease-in-out;
-    
 }
 .adventures__card:hover {
     transform: scale(1.02);
 }
+.skill__card {
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    flex: 0 0 22.333333rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0;
+    flex:0 0 18rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    transition: all 0.1s ease-in-out;
+}
+.skill__card:hover {
+    transform: scale(1.02);
+}
+
 .adventures__card-img {
     display: block;
     width: 100%;
@@ -344,11 +387,24 @@ body {
 }
 
 .icon {
-    color: #ffffff;
-    width: 3rem;
-    height: 3rem;
+    color: #014153;
+    width: 2.5rem;
+    height: 2.5rem;
     
 }
+.icon_two-star {
+    color: #014153;
+    width: 2.6rem;
+    height: 2.6rem;  
+}
+.icon_tree-star {
+    color: #014153;
+    width: 2.7rem;
+    height: 2.7rem;
+    transform: translateY(-2px);
+    
+}
+
 .icon__circle {
   background-color: #ed6a4e;
   width: 6rem;
@@ -358,6 +414,16 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+.icon__circle-skill {
+  background-color: #ed6a4e;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .parts__icon-outer {
     overflow: hidden;
@@ -395,6 +461,11 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+.icon__paragraph{
+    color : #014153;
+    font-weight: 700;
+    padding: 1.5rem;
 }
 .parts {
     padding-bottom: 1.8rem;
@@ -445,6 +516,7 @@ body {
     }
 
 } 
+
 @media(min-width: 62em) {
     .guide__container {
         padding-top: 1rem;
@@ -458,4 +530,69 @@ body {
     padding-bottom: 1.5rem;
     line-height: 1.4em;
     text-shadow: 0 0 0.05rem rgba(0, 0, 0, 0.5);
+}
+
+.skill__list{
+  padding: 0;
+  list-style-type: none;
+  font-size: 1rem;
+  color: #014153;
+}
+.skill__list-item:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.text__update {
+    color : #014153;
+    text-transform: uppercase;
+}
+.skill__list-item {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.skill__list-item::before {
+    content: "";
+    display: inline-block;
+    background-color: currentColor;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 99999999rem;
+
+    position: relative;
+    top: -0.15em;
+    margin-right: 0.5rem;
+}
+.quote{
+    background-color: #014153;
+    color: #ed6a4e;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.quote__figure {
+    margin : 0;
+    
+}
+.quote__blockquote {
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.075em;
+}
+.quote__paragraph {
+    margin: 0;
+    
+}
+.quote__paragraph::before{
+    content: "„" ;
+}
+.quote__paragraph::after{
+    content: "“" ;
+}
+.quote__figcaption {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.075em;
 }
